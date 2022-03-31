@@ -1,0 +1,53 @@
+body {
+	display: flex;
+	margin: 0;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: #F1F1F1;
+	transition: background-color .9s;
+}
+
+.body__night {
+	background-color: #292C35;
+}
+
+button {
+	position: relative;
+	width: 180px;
+	height: 80px;
+	border: none;
+	border-radius: 80px;
+	background-color: black;
+	cursor: pointer;
+}
+
+img {
+	position: absolute;
+	top: 0;
+	right: 1px; /*for the sun, the moon is overwritten*/
+	height: 95%;
+}
+
+#moon {
+	left: 1px;
+}
+
+.button__themeSwitch {
+	position: absolute;
+	width: 40%;
+	height: 90%;
+	left: 4px;
+	border-radius: 50%;
+	top: 4px;
+	z-index:1;
+	background-color: #F1F1F1;
+	transition: left .8s;
+}
+
+/* .button__themeSwitch__on { */
+/* 	left: 4px; */
+/* } */
+.button__themeSwitch__off {
+	left: 104px;
+}
